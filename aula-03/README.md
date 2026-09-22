@@ -2,16 +2,17 @@
 
 Nesta aula começamos a realizar operações no sistema de arquivos através do terminal Linux.
 
-Depois de utilizar o comando `ls` para visualizar o conteúdo de um diretório, agora vamos utilizar o comando `mkdir` para criar novos diretórios.
+Depois de utilizar o comando `ls` para visualizar o conteúdo de um diretório, agora utilizamos o comando `mkdir` para criar novos diretórios.
 
 ## O que vamos estudar
 
 - o que é o comando `mkdir`;
 - para que ele é utilizado;
 - como criar um diretório pelo terminal;
-- relação entre o terminal e a interface gráfica;
-- como confirmar a criação utilizando `ls`;
-- erros básicos que podem acontecer ao criar diretórios.
+- relação entre terminal e interface gráfica;
+- como verificar a criação utilizando `ls`;
+- sintaxe básica do comando;
+- primeiros exemplos práticos.
 
 ## Conceito importante
 
@@ -19,7 +20,7 @@ O comando `mkdir` é utilizado para criar diretórios.
 
 O nome vem de:
 
-**mkdir → make directory**
+**mkdir → make directory / make directories**
 
 Exemplo:
 
@@ -27,7 +28,7 @@ Exemplo:
 mkdir projetos
 ```
 
-Esse comando solicita a criação de um diretório chamado `projetos` dentro do diretório atual.
+Esse comando solicita a criação de um diretório chamado `projetos` dentro do local em que estamos trabalhando.
 
 Depois podemos utilizar:
 
@@ -39,19 +40,21 @@ para verificar se o novo diretório aparece na listagem.
 
 ## Terminal x Interface gráfica
 
-Na interface gráfica, normalmente criamos uma pasta utilizando o mouse e opções como:
+Na interface gráfica, normalmente criamos uma pasta utilizando opções como:
 
 **Novo → Pasta**
 
-No terminal podemos realizar a mesma operação utilizando:
+No terminal podemos realizar uma operação equivalente utilizando:
 
 ```bash
 mkdir nome-do-diretorio
 ```
 
-O sistema de arquivos é o mesmo.
+O sistema de arquivos continua sendo o mesmo.
 
-O que muda é a forma utilizada para realizar a operação.
+O que muda é a forma utilizada para interagir com ele.
+
+Um diretório criado pelo terminal também poderá ser visualizado normalmente através do gerenciador de arquivos.
 
 ## Exemplo prático
 
@@ -67,31 +70,35 @@ Verificando o resultado:
 ls
 ```
 
-Resultado esperado:
+O novo diretório deverá aparecer na listagem:
 
 ```text
 estudos-linux
 ```
 
-Também podemos abrir o gerenciador de arquivos e verificar que o diretório criado pelo terminal aparece normalmente na interface gráfica.
-
 ## Sintaxe básica
 
-```bash
-mkdir [opções] nome-do-diretorio
-```
-
-Nesta aula começamos utilizando a forma mais simples:
+A forma básica do comando é:
 
 ```bash
 mkdir nome-do-diretorio
 ```
 
-Opções e usos mais avançados serão apresentados no material complementar.
+Também podemos representar sua sintaxe de forma mais geral:
+
+```text
+mkdir [opções] diretório
+```
+
+Nesta aula utilizamos principalmente a forma básica.
+
+O material complementar apresenta outros recursos e exemplos do comando `mkdir`.
 
 ## Material da aula
 
-📘 O PDF complementar sobre o comando `mkdir` será disponibilizado nesta pasta.
+📘 [Abrir PDF — Guia do comando mkdir no Linux](./aula-03-mkdir-linux.pdf)
+
+O PDF complementar aprofunda o conteúdo da aula e apresenta exemplos adicionais, incluindo criação de vários diretórios, estruturas aninhadas, uso de opções do `mkdir` e erros comuns.
 
 ## Aprenda Linux BR
 
